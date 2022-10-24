@@ -1,0 +1,146 @@
+.users__profile__right {
+  padding: 2rem;
+  flex: 0.8;
+}
+.users__content-profile-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.users__profile__right {
+  width: 100%;
+}
+
+.users__content-profile div:first-child {
+  display: flex;
+}
+
+.user__content-details {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1fr;
+  grid-gap: 2rem;
+}
+
+.bookmark {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bookmark > a {
+  /* background-color: #6c63ff; */
+  color: grey;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.users__content-profile-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.users__content-profile-name > span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: block;
+  margin-top: 0.5rem;
+  color: #5b52e0;
+  font-weight: 500;
+}
+
+.users__content-profile-location {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.users__content-profile-location > p > span > i {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #5b52e0;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.users__content-profile-location > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+.users__content-profile-location > p > span > svg {
+  margin-right: 0.5rem;
+}
+
+.users__content-profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.users__content-profile-message p {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: #5b52e0;
+  width: min-content;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+.users__content-profile-message {
+  display: flex;
+  /* justify-content: center; */
+  gap: 1.2rem;
+}
+
+.users__content-profile-message p > svg {
+  font-size: 2rem;
+}
+
+.users__content-profile-message p > span {
+  font-size: 1.5rem;
+}
+
+.users__content-profile-message p:hover {
+  background-color: #352bc2;
+}
+
+.border-line {
+  border: 0.1px solid #ccc;
+  /* margin: 2rem 0; */
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bio-container h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.bio-container h1 > span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  text-align: center;
+}

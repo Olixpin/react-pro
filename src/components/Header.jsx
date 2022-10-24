@@ -2,8 +2,11 @@ import React from "react";
 import "./Header.css";
 import { ReactComponent as Logo } from "../img/logo.svg";
 import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { context } from "../context";
 
 const Header = () => {
+  const { toggle, setToggle } = useContext(context);
   return (
     <header className="header">
       <div className="header__content">
@@ -51,6 +54,18 @@ const Header = () => {
                 }
               >
                 Contact
+              </NavLink>
+            </li>
+
+            <li>
+              {" "}
+              <NavLink
+                to="/users"
+                style={({ isActive }) =>
+                  isActive ? { color: "#6C63FF" } : { color: "#111111" }
+                }
+              >
+                Users
               </NavLink>
             </li>
           </ul>

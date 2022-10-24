@@ -1,8 +1,13 @@
 .header {
-  background-color: #e5e5e520;
   font-family: "Archivo", sans-serif;
   padding: 2rem;
   border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  /* inset box shadow */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .header__content {
@@ -44,8 +49,6 @@
 
 @media screen and (max-width: 768px) {
   .header__content > a > span > h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: -0.05rem;
+    display: none;
   }
 }
